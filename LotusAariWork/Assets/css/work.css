@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Solway", serif;
+}
+
+.title h1 {
+  margin-top: 40vh;
+  width: 100%;
+  height: 70px;
+  background-color: #FFEDDE;
+  text-align: center;
+  padding: 10px;
+  font-size: 42px;
+  letter-spacing: 1.5px;
+  color: #123581;
+}
+.title .para {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 29px;
+  letter-spacing: 1.5px;
+}
+.title .content
+{
+    text-align: justify;
+    width:80%;
+    margin: auto;
+    font-size: 29px;
+    padding: 40px 0;
+}
+.card_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  width: 90%;
+  margin: 5vh auto 0 auto;
+}
+.card_image {
+  width: 350px;
+  height: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 4px solid #6909b3;
+  transition: all 0.1s ease-in-out;
+}
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.card_image:hover {
+  width: 350px;
+  height: 320px;
+}
+
+
+/* ------------------Media Query */
+/* --mobile */
+@media(min-width:320px) and (max-width:767px)
+{
+.title h1 {
+    margin-top: 40vh;
+    width: 100%;
+    height: 50px;
+    background-color: #FFEDDE;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    color: #123581;
+  }
+  .title .para {
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .title .content
+  {
+      text-align: justify;
+      width:80%;
+      margin: auto;
+      font-size: 16px;
+      padding: 40px 10px;
+  }
+  .card_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 90%;
+    margin: 5vh auto 0 auto;
+  }
+  .card_image {
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 4px solid #6909b3;
+    transition: all 0.1s ease-in-out;
+  }
+  .card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card_image:hover {
+    width: 250px;
+    height: 220px;
+  }
+}
+
+/* -Tab */
+@media(min-width:768px) and (max-width:1023px){
+.title h1 {
+  margin-top: 30vh;
+  width: 100%;
+  height: 70px;
+  background-color: #FFEDDE;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: #123581;
+}
+.title .para {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 19px;
+  letter-spacing: 1.5px;
+}
+.title .content
+{
+    text-align: justify;
+    width:80%;
+    margin: auto;
+    font-size: 19px;
+    padding: 40px 0;
+}
+.card_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  width: 90%;
+  margin: 5vh auto 0 auto;
+}
+.card_image {
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 4px solid #6909b3;
+  transition: all 0.1s ease-in-out;
+}
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.card_image:hover {
+  width: 350px;
+  height: 320px;
+}
+}

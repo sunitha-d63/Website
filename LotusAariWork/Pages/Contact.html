@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <link rel="stylesheet" href="/Assets/css/Contact.css" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <h2><span class="fancy">L</span>otus</h2>
+          <h4 class="logo-name">Aari Work</h4>
+        </div>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-phone-volume"></i>9562486513</p>
+          <p><i class="fas fa-envelope"></i>lotusaariwork@gmail.com</p>
+        </div>
+      </div>
+      <nav class="header1">
+        <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+        <ul id="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Pages/work.html">Our Work</a></li>
+          <li><a href="/Pages/Student_work.html">Our Student Work</a></li>
+          <li><a href="/Pages/Contact.html"  class="active">Contact us</a></li>
+          <li><a href="/Pages/About.html">About</a></li>
+          <li><a href="/Pages/Courses.html">Courses Details</a></li>
+        </ul>
+        <button class="login_btn" onclick="redirectToPage()">
+          Login / Register
+        </button>
+      </nav>
+    </header>
+
+    <!---------contact -->
+    <div class="contact_container">
+      <div class="contact_item">
+        <h2>Email Us</h2>
+        <i class="fas fa-envelope"></i>
+        <p>lotusaariwork@gmail.com</p>
+      </div>
+      <div class="contact_item">
+        <h2>Phone Number</h2>
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>9562486513</p>
+      </div>
+    </div>
+
+    <!-- -----------------contact_Form -->
+
+    <div class="contact_form">
+      <div class="image-section">
+        <img src="/Assets/Image/contact_img.jpg" alt="Contact_img" />
+      </div>
+      <div class="form_container">
+        <form action="" id="form" class="contactForm">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your Name"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-group">
+            <label for="mobile">Mobile Number</label>
+            <input
+              type="number"
+              id="mobile"
+              name="mobile"
+              placeholder="Enter your Mobile Number"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Send Message"
+            ></textarea>
+            <div class="error"></div>
+          </div>
+          <button type="submit">Sent Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo-section">
+          <div class="footer_logo">
+            <h1><span class="fancy">L</span>otus</h1>
+            <h2 class="logo-name">Aari Work</h2>
+          </div>
+          <p>
+            Start learning Aari embroidery with us now! Dive into the world of
+            intricate stitches, patterns, and designs from the comfort of your
+            own home. Join our online class and unleash your creativity with
+            beads, sequins, and specialized techniques.
+          </p>
+        </div>
+        <div class="info-section">
+          <h2>More info</h2>
+          <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Pages/work.html">Our Work</a></li>
+          <li><a href="/Pages/Student_work.html">Our Student Work</a></li>
+          <li><a href="/Pages/Contact.html">Contact us</a></li>
+          <li><a href="/Pages/About.html">About</a></li>
+          <li><a href="/Pages/Courses.html">Courses Details</a></li>
+          </ul>
+        </div>
+        <div class="contact-section">
+          <h2>Contact Us</h2>
+          <p><i class="fas fa-phone"></i> 9562486513</p>
+          <p><i class="fas fa-envelope"></i> lotusaariwork@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/Assets/Js/contact.js"></script>
+  </body>
+</html>

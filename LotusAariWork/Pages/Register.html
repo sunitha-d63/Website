@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link rel="stylesheet" href="/Assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div class="logo">
+            <h2><span class="fancy">L</span>otus</h2>
+            <h4 class="logo-name">Aari Work</h4>
+          </div>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-phone-volume"></i>9562486513</p>
+            <p><i class="fas fa-envelope"></i>lotusaariwork@gmail.com</p>
+          </div>
+        </div>
+        <nav class="header1">
+          <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+          <ul id="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Pages/work.html">Our Work</a></li>
+            <li><a href="/Pages/Student_work.html">Our Student Work</a></li>
+            <li><a href="/Pages/Contact.html">Contact us</a></li>
+            <li><a href="/Pages/About.html">About</a></li>
+            <li><a href="/Pages/Courses.html">Courses Details</a></li>
+          </ul>
+          <button class="login_btn" onclick="redirectToPage()">
+            Login / Register
+          </button>
+       </nav>
+      </header>
+    <div class="form_container">
+        <form action="" id="form" class="registerForm">
+            <div class="input-group">
+              <div class="drop_down">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name">
+                <div class="suggestions" id="nameSuggestions"></div>
+                <div class="error"></div>
+                </div>  
+            </div>
+            <div class="input-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="number" id="mobile" name="mobile" placeholder="Enter your Mobile Number">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create password">
+                <div class="error"></div>
+            </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+        <p>Already Have an Account? <a href="/Pages/login.html">Login</a></p>
+    </div>
+<script src="/Assets/Js/script.js"></script>
+</body>
+</html>
