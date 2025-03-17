@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (finduser) {
       alert("Login successful!");
-      window.location.href = "index.html";
+      window.location.href = "../index.html";
     } else {
       alert("Invalid email or password.");
     }
