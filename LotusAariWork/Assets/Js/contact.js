@@ -1,5 +1,5 @@
 function redirectToPage() {
-  window.location.href = "./Pages/login.html";
+  window.location.href = "../Pages/login.html";
 }
 
 // ---------------Toggle---------
