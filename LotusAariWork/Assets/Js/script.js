@@ -12,11 +12,11 @@ window.addEventListener("scroll", function () {
 
 // ------------button----------
 function redirectToPage() {
-  window.location.href = "/Pages/login.html";
+  window.location.href = "../Pages/login.html";
 }
 
 function changeToPage() {
-  window.location.href = "/Pages/Contact.html";
+  window.location.href = "../Pages/Contact.html";
 }
 
 // ---------------Toggle---------
