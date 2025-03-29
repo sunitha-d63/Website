@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Solway:wght@300;400;500;700;800&display=swap");
 * {
   margin: 0;
@@ -741,3 +742,748 @@ th {
     transition: 0.3s;
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Solway:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Solway", serif;
+  background-color: #f8f8e6;
+}
+header {
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  width: 100%;
+}
+.top_header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  color: rgb(3, 3, 3);
+  display: flex;
+  justify-content: end;
+  padding: 8px 5%;
+  font-size: 14px;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact_info li {
+  margin-right: 15px;
+  font-size: 17px;
+}
+
+.header_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  padding: 0 80px;
+}
+.navbar {
+  width: 100%;
+  background: #8b2a04;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  margin-top: -20%;
+}
+
+.logo h1 {
+  color: white;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  padding: 0 80px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.sell_btn {
+  background: rgb(236, 236, 113);
+  border: none;
+  padding: 8px 18px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.sell_btn li {
+  color: #8b2a04;
+}
+#menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #cfc6c2;
+}
+/* -----container */
+.Properties_Container {
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+.Properties_Container h2 {
+  font-size: 21px;
+}
+.listing {
+  background: white;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.listing img {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.details {
+  flex: 1;
+}
+.price {
+  color: brown;
+  font-size: 21px;
+  font-weight: bold;
+  position: absolute;
+  right: 70px;
+  top: 20px;
+}
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.visit {
+  background: white;
+  border: 2px solid brown;
+  color: rgb(27, 27, 27);
+}
+.contact {
+  background: brown;
+  color: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table,
+th,
+td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  color: #555;
+}
+.notification {
+  width: 350px;
+  font-size: 17px;
+  display: none;
+  position: absolute;
+  background: white;
+  border: 2px solid green;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 90%;
+  right: 10px;
+  z-index: 1000;
+}
+.notification h3 {
+  color: lightgreen;
+}
+/* footer */
+.footer {
+  width: 100%;
+  bottom: 0;
+  margin-top: auto;
+  background: #8b6f5a;
+  color: #f5e36a;
+  padding: 40px 5%;
+  z-index: 10;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+.logo_name {
+  font-size: 27px;
+  color: whitesmoke;
+}
+.footer-section {
+  flex: 1;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f5e36a;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.footer-section ul li a:hover {
+  color: #f5e36a;
+}
+
+.logo-section {
+  text-align: left;
+}
+
+.footer_logo {
+  width: 70px;
+  height: 70px;
+}
+
+.follow-text {
+  font-size: 21px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f5e36a;
+}
+/* Responsive */
+@media (max-width: 767px) and (min-width: 320px) {
+  header {
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    width: 100%;
+  }
+  .top_header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: rgb(3, 3, 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 8%;
+    align-items: center;
+    gap: 2px;
+  }
+  .header_links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0 10px;
+    font-size: 9px;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    padding: 15px 5%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    background-color: #8b2a04;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 10px 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav_links.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ddd8d6;
+    padding: 10px;
+  }
+
+  .Properties_Container {
+    width: 90%;
+    margin-top: 70%;
+  }
+
+  .Properties_Container h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .listing {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .listing img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .price {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    right: 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .btn {
+    width: auto;
+    min-width: 120px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background: #8b2a04;
+    color: white;
+    text-align: center;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .notification {
+    width: 90%;
+    font-size: 16px;
+    right: 5%;
+    top: 80%;
+  }
+  .footer {
+    text-align: center;
+    z-index: 10;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logo-section {
+    text-align: center;
+  }
+
+  .footer_logo {
+    width: 60px;
+  }
+
+  .follow-text {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-section ul li {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top_header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: rgb(3, 3, 3);
+    display: flex;
+    justify-content: end;
+    padding: 8px 5%;
+    font-size: 14px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact_info li {
+    margin-right: 15px;
+    font-size: 17px;
+  }
+
+  .header_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 0 80px;
+  }
+  .navbar {
+    width: 100%;
+    background: #8b2a04;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: -20%;
+  }
+
+  .logo h1 {
+    color: white;
+  }
+
+  .nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 80px;
+  }
+
+  .nav_links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+  }
+
+  .sell_btn {
+    background: rgb(236, 236, 113);
+    border: none;
+    padding: 8px 9px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .sell_btn li {
+    color: #8b2a04;
+  }
+  .Properties_Container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+  }
+  .Properties_Container h2 {
+    font-size: 21px;
+  }
+  .listing {
+    background: white;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .listing img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .details {
+    flex: 1;
+  }
+  .price {
+    color: brown;
+    font-size: 21px;
+    font-weight: bold;
+    position: absolute;
+    right: 70px;
+    top: 45px;
+  }
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+  }
+  .btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .visit {
+    background: white;
+    border: 2px solid brown;
+    color: rgb(27, 27, 27);
+  }
+  .contact {
+    background: brown;
+    color: white;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  table,
+  th,
+  td {
+    border: none;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    color: #555;
+  }
+  .notification {
+    width: 350px;
+    font-size: 17px;
+    display: none;
+    position: absolute;
+    background: white;
+    border: 2px solid green;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 90%;
+    right: 10px;
+    z-index: 1000;
+  }
+  .notification h3 {
+    color: lightgreen;
+  }
+  /* /footer */
+  .footer {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background: #8b6f5a;
+    color: #f5e36a;
+    padding: 40px 5%;
+    z-index: 10;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+  }
+  .logo_name {
+    font-size: 19px;
+    color: whitesmoke;
+  }
+  .footer-section {
+    flex: 1;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f5e36a;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+  }
+
+  .footer-section ul li a:hover {
+    color: #f5e36a;
+  }
+
+  .logo-section {
+    text-align: left;
+  }
+
+  .footer_logo {
+    width: 50px;
+  }
+
+  .follow-text {
+    font-size: 17px;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+  }
+}
+>>>>>>> 5c7de556b0b511ba7c16bc0ccc4514b45af7cb97
