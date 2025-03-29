@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Assets/css/schedule.css" />
+    <link rel="stylesheet" href="../Assets/css/properties.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top_header">
+        <div class="contact_info">
+          <ul class="header_links">
+            <li>Welcome User</li>
+            <li>Call - 000 867 1145</li>
+            <li>Your Home Here</li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../Assets/Image/logo.jpeg" alt="KeyNest" />
+          <h1>KEYNEST</h1>
+        </div>
+        <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+        <ul class="nav_links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/Properties.html">Properties</a></li>
+          <li><a href="../Pages/Agent.html">Agent</a></li>
+          <li>
+            <a href="../Pages/Sell.html" class="sell_btn">Post Property</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ------------formcontainer -->
+    <div class="schedule">
+      <div class="form_container">
+        <h2>Requesting Site Visit</h2>
+        <form id="visitForm">
+          <div class="form_group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" />
+          </div>
+          <span class="error" id="nameError"></span>
+
+          <div class="form_group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email Address" />
+          </div>
+          <span class="error" id="emailError"></span>
+
+          <div class="form_group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter Mobile Number" />
+          </div>
+          <span class="error" id="phoneError"></span>
+          <div class="container">
+            <h5>Schedule Viewing</h5>
+            <div class="date-options">
+              <div class="option" data-value="Feb 3">MON<br />3<br />Feb</div>
+              <div class="option" data-value="Feb 4">TUES<br />4<br />Feb</div>
+              <div class="option" data-value="Feb 5">WED<br />5<br />Feb</div>
+              <div class="option" data-value="Feb 6">THU<br />6<br />Feb</div>
+              <div class="option" data-value="Feb 7">FRI<br />7<br />Feb</div>
+              <div class="option" data-value="Feb 8">SAT<br />8<br />Feb</div>
+              <div class="option" data-value="Feb 9">SUN<br />9<br />Feb</div>
+            </div>
+            <div class="time-options">
+              <div class="option" data-value="Morning">
+                Morning<br />8 am - 12 pm
+              </div>
+              <div class="option" data-value="Afternoon">
+                Afternoon<br />12 pm - 4 pm
+              </div>
+              <div class="option" data-value="Evening">
+                Evening<br />4 pm - 8 pm
+              </div>
+            </div>
+
+            <button class="submit-btn" id="scheduleBtn">Schedule Tour</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="similar_project">
+        <h2 class="section-title">Similar Projects</h2>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="../Assets/Image/image_1.jpeg" alt="Flats & Apartments" />
+            <div class="card-content">
+              <p class="property-type">Flats & Apartments</p>
+              <p class="property-details">
+                <strong>2 BHK / 1000 Sq.ft.</strong>
+              </p>
+              <p class="property-location">Thirumal Nagar, Chennai</p>
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="../Assets/Image/image_2.jpg" alt="Individual Homes" />
+            <div class="card-content">
+              <p class="property-type">Individual Homes</p>
+              <p class="property-details">
+                <strong>2 BHK / 1000 Sq.ft.</strong>
+              </p>
+              <p class="property-location">Thirumal Nagar, Chennai</p>
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="../Assets/Image/image_3.jpeg" alt="Flats & Apartments" />
+            <div class="card-content">
+              <p class="property-type">Flats & Apartments</p>
+              <p class="property-details">
+                <strong>2 BHK / 1000 Sq.ft.</strong>
+              </p>
+              <p class="property-location">Thirumal Nagar, Chennai</p>
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="../Assets/Image/img_1.jpeg" alt="Individual Homes" />
+            <div class="card-content">
+              <p class="property-type">Individual Homes</p>
+              <p class="property-details">
+                <strong>2 BHK / 1000 Sq.ft.</strong>
+              </p>
+              <p class="property-location">Thirumal Nagar, Chennai</p>
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="../Assets/Image/img_2.jpeg" alt="Flats & Apartmnents" />
+            <div class="card-content">
+              <p class="property-type">Flats & Apartmnents</p>
+              <p class="property-details">
+                <strong>2 BHK / 1000 Sq.ft.</strong>
+              </p>
+              <p class="property-location">Thirumal Nagar, Chennai</p>
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="../Assets/Image/img_3.jpg" alt="Individual Homes" />
+            <div class="card-content">
+              <p class="property-type">Individual Homes</p>
+              <p class="property-details">
+                <strong>2 BHK / 1000 Sq.ft.</strong>
+              </p>
+              <p class="property-location">Thirumal Nagar, Chennai</p>
+              <button class="details-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section logo-section">
+          <img
+            src="../Assets/Image/logo.jpeg"
+            alt="KeyNest Logo"
+            class="footer_logo"
+          />
+          <span class="logo_name">KEYNEST</span>
+          <p class="follow-text">Follow</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">For Partners</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Unsubscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Home Loans</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Homes Near Me</a></li>
+            <li><a href="#">Schools</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Join Us</h3>
+          <ul>
+            <li><a href="#">Real Estate Agents</a></li>
+            <li><a href="#">Makaan</a></li>
+            <li><a href="#">PropTiger</a></li>
+            <li><a href="#">Apply to Join Our Network</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../Assets/Js/schedule.js"></script>
+  </body>
+</html>

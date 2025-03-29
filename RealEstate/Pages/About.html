@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../Assets/css/about.css" />
+    <link rel="stylesheet" href="../Assets/css/properties.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top_header">
+        <div class="contact_info">
+          <ul class="header_links">
+            <li>Welcome User</li>
+            <li>Call - 000 867 1145</li>
+            <li>Your Home Here</li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../Assets/Image/logo.jpeg" alt="KeyNest" />
+          <h1>KEYNEST</h1>
+        </div>
+        <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+        <ul class="nav_links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/Properties.html">Properties</a></li>
+          <li><a href="../Pages/Agent.html">Agent</a></li>
+          <li>
+            <a href="../Pages/post.html" class="sell_btn">Post Property</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="gallery">
+      <img
+        src="../Assets/Image/image_2.jpg"
+        alt="Main Image"
+        class="main-img"
+      />
+      <div class="small-img-container">
+        <img
+          src="../Assets/Image/gird_1.jpeg"
+          alt="Image 1"
+          class="small-img"
+        />
+        <img
+          src="../Assets/Image/grid_2.webp"
+          alt="Image 2"
+          class="small-img"
+        />
+        <img src="../Assets/Image/grid_3.jpg" alt="Image 3" class="small-img" />
+        <img
+          src="../Assets/Image/grid_4.jpeg"
+          alt="Image 4"
+          class="small-img"
+        />
+      </div>
+    </div>
+    <!-- about -->
+    <div class="about">
+      <h1>About</h1>
+      <div class="content_about">
+        <p>
+          Welcome to the stunning contemporary villa, designed for those who
+          appreciate modern architecure and luxurious living with sleek
+          minimimalist exterior, large floor-to-ceiling windows, and a perfect
+          balance of wood and glass elements, this home offer an open, airy and
+          serene ambiance.
+        </p>
+      </div>
+    </div>
+    <!-- floor-plan -->
+    <div class="floor-plan">
+      <h1>Floor plan & Price list</h1>
+      <div class="container_floor">
+        <div class="image-container">
+          <img src="../Assets/Image/map.jpeg" alt="Floor Plan" />
+        </div>
+        <div class="details_plan">
+          <table id="table_plan">
+            <thead>
+              <tr>
+                <th>Build Up Area</th>
+                <th>Carpet Area</th>
+                <th>Builder Price</th>
+                <th>Availability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>2,673 Sqft</strong></td>
+                <td>NA</td>
+                <td><strong>₹ 1.21 Cr</strong></td>
+                <td class="available">Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="property-title">
+          <strong
+            >Horizon Seaside Villa, Pondicherry - 5 BHK Luxury Villa</strong
+          >
+        </p>
+      </div>
+    </div>
+    <!-- brochure-section -->
+    <div class="brochure-section">
+      <h1 class="brochure-title">Brochure</h1>
+      <button class="interest-btn" onclick="showPopup()">
+        Are you Interested <br />in this project
+      </button>
+    </div>
+    <div class="brochure">
+      <div class="brochure-content">
+        <img
+          src="../Assets/Image/download.jpeg"
+          alt="Download Icon"
+          class="brochure-icon"
+        />
+        <div class="brochure-text">
+          <p>Need more details about this Project??</p>
+          <h2>Download the Brochure Now</h2>
+        </div>
+        <a href="brochure.pdf" class="download-button" download>DOWNLOAD</a>
+      </div>
+    </div>
+
+    <!-- Popup Form -->
+    <div class="popup-bg" id="popup-bg"></div>
+    <div class="popup" id="popup">
+      <h3>Interested in This Project?</h3>
+      <p>Please share your contact info</p>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <input type="text" id="name" class="form-input" placeholder="Name" />
+        <span class="error" id="nameError"
+          >Name must be at least 3 characters</span
+        >
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          placeholder="Email Address"
+        />
+        <span class="error" id="emailError">Enter a valid email</span>
+        <input
+          type="text"
+          id="mobile"
+          class="form-input"
+          placeholder="Mobile Number"
+        />
+        <span class="error" id="mobileError">Mobile must be 10 digits</span>
+        <textarea
+          id="message"
+          class="form-input"
+          placeholder="Message"
+        ></textarea>
+        <span class="error" id="messageError"
+          >Message must be at least 10 characters</span
+        >
+        <input type="checkbox" id="agree" />
+        <label for="agree" class="agree"
+          >I agree to be contacted via call, whatsapp, sms and email by KEYNEST
+          and other advertiser for Similar Properties.</label
+        >
+        <span class="error" id="agreeError">You must agree</span>
+        <button type="submit" class="request-btn">Request Visit</button>
+      </form>
+      <button onclick="closePopup()" class="close_btn">Close</button>
+    </div>
+    <!-- project-specs -->
+    <h1 class="section-title">Project Specification</h1>
+    <div class="project-specs">
+      <div class="specs-container">
+        <div class="left-column">
+          <h3>4 BHK Spacious Design</h3>
+          <li>Well-lit bedrooms with breathtaking views.</li>
+
+          <h3>Gourmet Kitchen</h3>
+          <li>High-end appliances and a sleek modular setup.</li>
+
+          <h3>Smart Home Features</h3>
+          <li>Automated lighting, security, and temperature control.</li>
+        </div>
+
+        <div class="right-column">
+          <h3>Elegant Living Space</h3>
+          <li>A cozy sophisticated room with premium furnishings.</li>
+
+          <h3>Private Terrace & Garden</h3>
+          <li>Rooftop greenery for a refreshing outdoor retreat.</li>
+
+          <h3>Prime Location</h3>
+          <li>Situated in a peaceful and upscale neighbourhood.</li>
+        </div>
+      </div>
+    </div>
+    <!-- discussion-board -->
+    <h1 class="section-title">Discussion Board</h1>
+    <div class="discussion-board">
+      <form id="discussion-form">
+        <div class="input-group">
+          <select id="topic">
+            <option value="">Select Topic</option>
+            <option value="Query">Query</option>
+            <option value="Review">Review</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Complaint">Complaint</option>
+          </select>
+          <span id="topic-error" class="errors"></span>
+          <input type="text" id="subject" placeholder="Subject" />
+          <span id="subject-error" class="errors"></span>
+        </div>
+
+        <textarea
+          id="messages"
+          placeholder="Write Here....... (Max 3000 Characters)"
+          maxlength="3000"
+        ></textarea>
+        <span id="messages-error" class="errors"></span>
+        <button type="submit" class="submit-btn">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-------------footer--------------------- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section logo-section">
+          <img
+            src="../Assets/Image/logo.jpeg"
+            alt="KeyNest Logo"
+            class="footer_logo"
+          />
+          <span class="logo_name">KEYNEST</span>
+          <p class="follow-text">Follow</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">For Partners</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Unsubscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Home Loans</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Homes Near Me</a></li>
+            <li><a href="#">Schools</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Join Us</h3>
+          <ul>
+            <li><a href="#">Real Estate Agents</a></li>
+            <li><a href="#">Makaan</a></li>
+            <li><a href="#">PropTiger</a></li>
+            <li><a href="#">Apply to Join Our Network</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../Assets/Js/about.js"></script>
+  </body>
+</html>
