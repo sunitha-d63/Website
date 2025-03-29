@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top_header">
+        <div class="contact_info">
+          <ul class="header_links">
+            <li>Welcome User</li>
+            <li>Call - 000 867 1145</li>
+            <li>Your Home Here</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../Assets/Image/logo.jpeg" alt="KeyNest" />
+          <h1>KEYNEST</h1>
+        </div>
+        <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+        <ul class="nav_links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/Properties.html">Properties</a></li>
+          <li><a href="../Pages/Agent.html">Agent</a></li>
+          <li>
+            <a href="../Pages/Sell.html" class="sell_btn active"
+              >Post Property</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ------------firstcontainer -->
+    <div class="topic">
+      <h1>Sell Your Property Online For Free</h1>
+    </div>
+    <div class="first_container">
+      <div class="project_container">
+        <div class="project_card card1">
+          <img src="../Assets/Image/image_1.jpeg" alt="House Image" />
+          <div class="card-content">
+            <div class="title">
+              Glass House <span class="price">Rs. 90 Lakhs</span>
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-pin"></i> Mumbai
+            </div>
+            <div class="details">
+              <span>5 Bedrooms</span>
+              <span>3 Bathrooms</span>
+              <span>Size 60 m2</span>
+            </div>
+          </div>
+          <div class="bottom-section">
+            <span><i class="fa-solid fa-heart"></i></span>
+            <span>5 Year</span>
+          </div>
+        </div>
+        <div class="project_card card2">
+          <img src="../Assets/Image/image_2.jpg" alt="House Image" />
+          <div class="card-content">
+            <div class="title">
+              Tribal Homes <span class="price">Rs. 68 Lakhs</span>
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-pin"></i> Bangalore
+            </div>
+            <div class="details">
+              <span>3 Bedrooms</span>
+              <span>3 Bathrooms</span>
+              <span>Size 30 m2</span>
+            </div>
+          </div>
+          <div class="bottom-section">
+            <span><i class="fa-solid fa-heart"></i></span>
+            <span>1 Year</span>
+          </div>
+        </div>
+        <div class="project_card card3">
+          <img src="../Assets/Image/image_3.jpeg" alt="House Image" />
+          <div class="card-content">
+            <div class="title">
+              Seaside Villa <span class="price">Rs. 5 Cr</span>
+            </div>
+            <div class="location">
+              <i class="fa-solid fa-location-pin"></i> Visaka
+            </div>
+            <div class="details">
+              <span>8 Bedrooms</span>
+              <span>8 Bathrooms</span>
+              <span>Size 90 m2</span>
+            </div>
+          </div>
+          <div class="bottom-section">
+            <span><i class="fa-solid fa-heart"></i></span>
+            <span>2 Year</span>
+          </div>
+        </div>
+      </div>
+      <div class="FormContainer">
+        <form action="" id="form">
+          <h2>Lets Get Started</h2>
+          <div class="inline-inputs">
+            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Mobile Number" />
+          </div>
+          <input type="email" placeholder="Email Id" class="email" />
+          <div class="dropdown-container">
+            <select id="citySelect" onclick="toggleDropdown()">
+              <option value="" selected hidden>Chennai</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Choose your location"
+              id="cityInput"
+              readonly
+            />
+          </div>
+          <div class="dropdown-list" id="cityDropdown">
+            <input
+              type="text"
+              id="searchCity"
+              placeholder="Type to find your city"
+              onkeyup="filterCities()"
+            />
+            <div class="city-group">
+              <h3>Popular Cities</h3>
+              <span onclick="selectCity(this)">New Delhi</span>
+              <span onclick="selectCity(this)">Mumbai</span>
+              <span onclick="selectCity(this)">Bangalore</span>
+              <span onclick="selectCity(this)">Chennai</span>
+              <span onclick="selectCity(this)">Hyderabad</span>
+              <span onclick="selectCity(this)">Ahmedabad</span>
+            </div>
+            <div class="city-group">
+              <h3>Other Cities</h3>
+              <span onclick="selectCity(this)">Jaipur</span>
+              <span onclick="selectCity(this)">Lucknow</span>
+              <span onclick="selectCity(this)">Indore</span>
+              <span onclick="selectCity(this)">Bhopal</span>
+              <span onclick="selectCity(this)">Coimbatore</span>
+              <span onclick="selectCity(this)">Nagpur</span>
+              <span onclick="selectCity(this)">Ludhiana</span>
+              <span onclick="selectCity(this)">Ptna</span>
+              <span onclick="selectCity(this)">Lucknow</span>
+              <span onclick="selectCity(this)">Indro</span>
+              <span onclick="selectCity(this)">Bhopal</span>
+              <span onclick="selectCity(this)">Viska</span>
+              <span onclick="selectCity(this)">Vadadara</span>
+              <span onclick="selectCity(this)">Nagpur</span>
+              <span onclick="selectCity(this)">Ludhiana</span>
+            </div>
+          </div>
+          <p class="para">You are a</p>
+          <div class="radio-group">
+            <button>Owner</button>
+            <button>Agent</button>
+            <button>Builder</button>
+          </div>
+          <button type="submit" class="submit-btn" id="form1Submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="Ad-section">
+      <button class="click-btn" onclick="redirectToPage()">
+        Post Property
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section logo-section">
+          <img
+            src="../Assets/Image/logo.jpeg"
+            alt="KeyNest Logo"
+            class="footer_logo"
+          />
+          <span class="logo_name">KEYNEST</span>
+          <p class="follow-text">Follow</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">For Partners</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Unsubscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Home Loans</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Homes Near Me</a></li>
+            <li><a href="#">Schools</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Join Us</h3>
+          <ul>
+            <li><a href="#">Real Estate Agents</a></li>
+            <li><a href="#">Makaan</a></li>
+            <li><a href="#">PropTiger</a></li>
+            <li><a href="#">Apply to Join Our Network</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../Assets/Js/script.js"></script>
+  </body>
+</html>
